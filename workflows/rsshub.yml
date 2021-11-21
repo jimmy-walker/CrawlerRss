@@ -1,0 +1,17 @@
+on:
+  rsshub:
+    path: /smzdm/keyword/女装
+jobs:
+  print:
+    name: Print
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Outputs
+        env:
+          title: ${{on.rsshub.outputs.title}}
+          description: ${{on.rsshub.outputs.description}}
+          link: ${{on.rsshub.outputs.link}}
+        run: |
+          echo title: $title
+          echo description: $description
+          echo link: $link
