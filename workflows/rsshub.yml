@@ -1,6 +1,6 @@
 on:
   rsshub:
-    path: /smzdm/keyword/女装
+    path: /sina/finance
 jobs:
   print:
     name: Print
